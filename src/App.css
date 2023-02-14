@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.search {
+  margin: 10px;
+}
+
+input {
+  border-radius: 0.5em;
+  height: 30px;
+  width: 30vw;
+}
+
+
+input[type=text] {
+  font-size: 1.2em;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
