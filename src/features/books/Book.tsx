@@ -1,6 +1,6 @@
-import { Component } from 'react'
-import { BookI } from './booksSlice';
+import { Component } from 'react';
 import { styled, TableCell, TableRow, tableCellClasses } from '@mui/material';
+import { BookI } from '../../types/types';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {

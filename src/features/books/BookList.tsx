@@ -1,7 +1,17 @@
-import Book from './Book';
-import { InitialBooksState } from './booksSlice';
+import Book from "./Book";
 
-import { styled, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, tableCellClasses} from '@mui/material';
+import {
+  styled,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  tableCellClasses,
+} from "@mui/material";
+import { InitialBooksState } from "../../types/types";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -13,7 +23,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-export default function BookList({books, loading, error }: InitialBooksState) {
+export default function BookList({ books, loading, error }: InitialBooksState) {
   return (
     <>
       {loading && <div>Loading...</div>}
@@ -33,11 +43,18 @@ export default function BookList({books, loading, error }: InitialBooksState) {
               </TableRow>
             </TableHead>
             <TableBody>
-              {books.map(book => (
+              {books.map((book) => (
                 <Book
-                  key={book.id} id={book.id} book_title={book.book_title} book_author={book.book_author} book_publication_year={book.book_publication_year} book_publication_country={book.book_publication_country} book_publication_city={book.book_publication_city} book_pages={book.book_pages}                />
+                  key={book.id}
+                  id={book.id}
+                  book_title={book.book_title}
+                  book_author={book.book_author}
+                  book_publication_year={book.book_publication_year}
+                  book_publication_country={book.book_publication_country}
+                  book_publication_city={book.book_publication_city}
+                  book_pages={book.book_pages}
+                />
               ))}
-
             </TableBody>
           </Table>
         </TableContainer>

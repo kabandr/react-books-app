@@ -1,18 +1,19 @@
-import { Component } from 'react'
+import { Component } from "react";
+import { SearchProps } from "../../types/types";
 
-type Props = {
-  setSearchInput: (value: string) => void
-}
-
-export class Search extends Component<Props> {
+export class Search extends Component<SearchProps> {
   handleInputChange = (e: any) => {
-    this.props.setSearchInput(e.target.value)
-  }
+    this.props.setSearchInput(e.target.value);
+  };
   render() {
     return (
-      <div className='search'>
-        <input type="text" placeholder='search for a book' onChange={this.handleInputChange} />
+      <div className="search">
+        <input
+          type="text"
+          placeholder="search for a book"
+          onChange={this.handleInputChange}
+        />
       </div>
-    )
+    );
   }
 }
