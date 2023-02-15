@@ -4,8 +4,8 @@
 
 - You need Node.js installed on your machine (ideally a recent version).
 ```
-git clone https://github.com/kabandr/react-books
-cd react-books
+git clone https://github.com/kabandr/react-books-app
+cd react-books-app
 
 yarn install 
     or 
