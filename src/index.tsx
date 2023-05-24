@@ -9,14 +9,6 @@ import './index.css';
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//   },
-// ]);
-
 root.render(
   <React.StrictMode>
     <Provider store={store}>

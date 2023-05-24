@@ -20,7 +20,7 @@ describe("books reducer", () => {
     });
   });
 
-  it("should return right book total count", async () => {
+  it("should return the right book total count", async () => {
     // Dispatch the async action
     await store.dispatch(
       fetchBooks({ page: 1, itemsPerPage: 20, filters: [] })

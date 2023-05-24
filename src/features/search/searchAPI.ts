@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-const BASE_URL = "http://nyx.vima.ekt.gr:3000/api/books"
+const BASE_URL = "http://localhost:3000/api/books"
 
 export const searchBooks = createAsyncThunk(
     'books/searchBooks',
